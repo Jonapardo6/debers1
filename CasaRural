@@ -1,0 +1,17 @@
+public class CasaRural extends Casa {
+    private double distanciaACapital;
+    private int altitud;
+
+    public CasaRural(int identificadorInmobiliario, int area, String direccion, double valorPorMetroCuadrado, int numeroHabitaciones, int numeroBanos, int numeroPisos, double distanciaACapital, int altitud) {
+        super(identificadorInmobiliario, area, direccion, valorPorMetroCuadrado, numeroHabitaciones, numeroBanos, numeroPisos);
+        this.distanciaACapital = distanciaACapital;
+        this.altitud = altitud;
+    }
+
+    @Override
+    public void imprimir() {
+        super.imprimir();
+        System.out.println("Distancia a la capital: " + distanciaACapital + " km");
+        System.out.println("Altitud: " + altitud + " m");
+    }
+}
