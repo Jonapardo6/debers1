@@ -1,0 +1,14 @@
+public abstract class Local extends Inmueble {
+    protected TipoLocal tipoLocal;
+
+    public Local(int identificadorInmobiliario, int area, String direccion, double valorPorMetroCuadrado, TipoLocal tipoLocal) {
+        super(identificadorInmobiliario, area, direccion, valorPorMetroCuadrado);
+        this.tipoLocal = tipoLocal;
+    }
+
+    @Override
+    public void imprimir() {
+        super.imprimir();
+        System.out.println("Tipo de Local: " + tipoLocal);
+    }
+}
