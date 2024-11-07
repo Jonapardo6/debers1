@@ -1,0 +1,14 @@
+public class LocalComercial extends Local {
+    private String centroComercial;
+
+    public LocalComercial(int identificadorInmobiliario, int area, String direccion, double valorPorMetroCuadrado, TipoLocal tipoLocal, String centroComercial) {
+        super(identificadorInmobiliario, area, direccion, valorPorMetroCuadrado, tipoLocal);
+        this.centroComercial = centroComercial;
+    }
+
+    @Override
+    public void imprimir() {
+        super.imprimir();
+        System.out.println("Centro Comercial: " + centroComercial);
+    }
+}
