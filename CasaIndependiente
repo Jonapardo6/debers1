@@ -1,0 +1,12 @@
+public class CasaIndependiente extends CasaUrbana {
+
+    public CasaIndependiente(int identificadorInmobiliario, int area, String direccion, double valorPorMetroCuadrado, int numeroHabitaciones, int numeroBanos, int numeroPisos) {
+        super(identificadorInmobiliario, area, direccion, valorPorMetroCuadrado, numeroHabitaciones, numeroBanos, numeroPisos);
+    }
+
+    @Override
+    public void imprimir() {
+        super.imprimir();
+        System.out.println("Casa Independiente");
+    }
+}
