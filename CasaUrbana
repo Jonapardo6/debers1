@@ -1,0 +1,5 @@
+public abstract class CasaUrbana extends Casa {
+    public CasaUrbana(int identificadorInmobiliario, int area, String direccion, double valorPorMetroCuadrado, int numeroHabitaciones, int numeroBanos, int numeroPisos) {
+        super(identificadorInmobiliario, area, direccion, valorPorMetroCuadrado, numeroHabitaciones, numeroBanos, numeroPisos);
+    }
+}
