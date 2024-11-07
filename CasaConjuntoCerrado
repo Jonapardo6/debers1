@@ -1,0 +1,20 @@
+public class CasaConjuntoCerrado extends CasaUrbana {
+    private double valorAdministracion;
+    private boolean tienePiscina;
+    private boolean tieneCamposDeportivos;
+
+    public CasaConjuntoCerrado(int identificadorInmobiliario, int area, String direccion, double valorPorMetroCuadrado, int numeroHabitaciones, int numeroBanos, int numeroPisos, double valorAdministracion, boolean tienePiscina, boolean tieneCamposDeportivos) {
+        super(identificadorInmobiliario, area, direccion, valorPorMetroCuadrado, numeroHabitaciones, numeroBanos, numeroPisos);
+        this.valorAdministracion = valorAdministracion;
+        this.tienePiscina = tienePiscina;
+        this.tieneCamposDeportivos = tieneCamposDeportivos;
+    }
+
+    @Override
+    public void imprimir() {
+        super.imprimir();
+        System.out.println("Valor de Administración: $" + valorAdministracion);
+        System.out.println("Tiene Piscina: " + (tienePiscina ? "Sí" : "No"));
+        System.out.println("Tiene Campos Deportivos: " + (tieneCamposDeportivos ? "Sí" : "No"));
+    }
+}
