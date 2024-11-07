@@ -1,0 +1,14 @@
+public class Oficina extends Local {
+    private boolean esGobierno;
+
+    public Oficina(int identificadorInmobiliario, int area, String direccion, double valorPorMetroCuadrado, TipoLocal tipoLocal, boolean esGobierno) {
+        super(identificadorInmobiliario, area, direccion, valorPorMetroCuadrado, tipoLocal);
+        this.esGobierno = esGobierno;
+    }
+
+    @Override
+    public void imprimir() {
+        super.imprimir();
+        System.out.println("Es de Gobierno: " + (esGobierno ? "Sí" : "No"));
+    }
+}
