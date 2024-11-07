@@ -1,0 +1,14 @@
+public class ApartamentoFamiliar extends Apartamento {
+    private double valorAdministracion;
+
+    public ApartamentoFamiliar(int identificadorInmobiliario, int area, String direccion, double valorPorMetroCuadrado, int numeroHabitaciones, int numeroBanos, double valorAdministracion) {
+        super(identificadorInmobiliario, area, direccion, valorPorMetroCuadrado, numeroHabitaciones, numeroBanos);
+        this.valorAdministracion = valorAdministracion;
+    }
+
+    @Override
+    public void imprimir() {
+        super.imprimir();
+        System.out.println("Valor de Administración: $" + valorAdministracion);
+    }
+}
