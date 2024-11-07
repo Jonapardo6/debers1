@@ -1,0 +1,6 @@
+public abstract class Apartamento extends InmuebleVivienda {
+
+    public Apartamento(int identificadorInmobiliario, int area, String direccion, double valorPorMetroCuadrado, int numeroHabitaciones, int numeroBanos) {
+        super(identificadorInmobiliario, area, direccion, valorPorMetroCuadrado, numeroHabitaciones, numeroBanos);
+    }
+}
