@@ -1,0 +1,12 @@
+public class Apartaestudio extends Apartamento {
+
+    public Apartaestudio(int identificadorInmobiliario, int area, String direccion, double valorPorMetroCuadrado) {
+        super(identificadorInmobiliario, area, direccion, valorPorMetroCuadrado, 1, 1);
+    }
+
+    @Override
+    public void imprimir() {
+        super.imprimir();
+        System.out.println("Apartaestudio");
+    }
+}
